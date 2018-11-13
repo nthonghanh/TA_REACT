@@ -1,0 +1,17 @@
+@import 'scss/base';
+
+:export {
+    loadingColor: $white;
+}
+
+.io-loading {
+    .content {
+        text-align: center;
+        background-color: transparent;
+        border: none;
+
+        .text {
+            color: $white;
+        }
+    }
+}

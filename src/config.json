@@ -1,0 +1,12 @@
+{
+    "development": {
+        "API_URL": "",
+        "AUTHORIZATION": false,
+        "CONTROLLER_USER": true
+    },
+    "production": {
+        "API_URL": "/api",
+        "AUTHORIZATION": true,
+        "CONTROLLER_USER": false
+    }
+}

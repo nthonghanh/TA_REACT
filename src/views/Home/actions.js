@@ -1,5 +1,6 @@
 import { requestStartAction } from 'containers/App/actions';
 
+
 export const ACTIONS = {
     'RESET_STATE': 'HOME/RESET_STATE'
 };
@@ -11,3 +12,4 @@ export const ACTIONS = {
 export const resetStateAction = () => {
     return dispatch => dispatch(requestStartAction(ACTIONS.RESET_STATE, {}, false));
 };
+

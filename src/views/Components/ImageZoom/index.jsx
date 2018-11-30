@@ -5,24 +5,30 @@ import './style.scss';
 const ImageZoom = (props) => {
     const { imageUrl, title, subTitle, buttonName } = props;
     return (
-        <div className='item'>
-            <img src='https://cl.ly/image/0v15321t3W1a/pepsi.jpg' alt='pepsi' width='540' height='548' />
-            <div className='item-overlay top'></div>
+        <div className='category'>
+            <div className='item'>
+                <img src={ imageUrl } alt='' width='540' height='548' />
+                <div className='caption text-center'>
+                    <h4 className='title small'>{ title }</h4>
+                    { subTitle && <p className='desc'>{ subTitle }</p> }
+                    <a className='text-uppercase' href='/Brands-and-Designers/Theodore-Alexander'>{ buttonName }</a>
+                </div>
+            </div>
         </div>
     );
 };
 
 ImageZoom.propTypes = {
-    imageUrl: PropTypes.string,
+    imageUrl: PropTypes.string.isRequired,
     title: PropTypes.string,
     subTitle: PropTypes.string,
     buttonName: PropTypes.string
 };
 
 ImageZoom.defaultProps = {
-    imageUrl: '',
     title: '',
     subTitle: '',
     buttonName: ''
 };
+
 export default ImageZoom;

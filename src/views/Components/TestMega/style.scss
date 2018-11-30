@@ -1,0 +1,136 @@
+@import 'scss/base';
+
+.nav-mega {
+	.top-nav {
+        background-color: black;
+        nav.navbar {
+            padding: 0px;
+            height: 45px;
+            max-width: 1140px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            .nav-link {
+                padding: 0px auto;
+                color: #e0e0e0;
+                font-size: 16px;
+                transition: color 150ms ease-in-out;
+                &:hover {
+                    color: #999;
+                }
+                span {
+                    padding-left: 6px;
+                    font-size: 14px;
+                }
+            }
+            .instagram, .pinterest, .twitter, .facebook {
+                transition: color 150ms ease-in-out;
+            }
+            .instagram:hover {
+                color: #a03eb9;
+            }
+            .pinterest:hover {
+                color: #b31217;
+            }
+            .twitter:hover {
+                color: #339dc4;
+            }
+            .facebook:hover {
+                color: #314b7e;
+            }
+        }
+    }
+    .nav-container {
+    	padding: 35px 0px 30px 0px;
+    	.nav-main {
+	    	padding: 0px;
+	    	.logo {
+                padding-right: 4.67%;
+				width: 267px;
+				margin: 0px;
+			}
+			.nav-collapse {
+                .nav-above {
+                    border-bottom: 2px solid #000;
+                    font-size: 13px;
+                    height: 55px;
+                    width: 100%;
+                    padding: 0px;
+                    vertical-align: bottom;
+	                text-transform: uppercase;
+                    button {
+                        color: black;
+                        background: none;
+                        border: none;
+                        font-size: 13px;
+                        padding: 8px;
+                        box-shadow: none;
+                    }
+                    .nav-link {
+                        color: #000;
+                        transition: color .3s;
+                        letter-spacing: -.25px;
+                        font-size: 13px;
+                        transition: color 150ms ease-in-out;
+                        &:hover {
+                            color: #afa99f;
+                        }
+                        div {
+                            width: 10px;
+                        }
+                        span {
+                            padding-left: 6px;
+                        }
+                        .search-container {
+                            .search-button {
+                                cursor: pointer;
+                                font-size: 13px;
+                                .icon-delete {
+                                    display: none;
+                                }
+                            }
+                            .search {
+                                font-size: 24px;
+                                color: #000;
+                                position: absolute;
+                                left: 49px; 
+                                outline: none;
+                                border: none;
+                                height: 30px;
+                                padding: 0;
+                                width: 0;
+                                z-index: 10;
+                                opacity: 0;
+                                &:focus {
+                                    width: 100%; 
+                                    padding-left: calc(4.67% + 49px);
+                                    opacity: 1;
+                                    transition: opacity 1s linear;
+                                    ~ .search-button {
+                                        .icon-delete {
+                                            display: block;
+                                            cursor: pointer;
+                                        }
+                                        .icon-search {
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 20px;
+                                            z-index: 20;
+                                        }
+                                    }
+                                }
+                            }
+                            .expand-right {
+                                left: auto;
+                                right: 49px; 
+                            }
+                        }
+                    }
+                }
+			}
+	    }
+    }
+	
+
+}

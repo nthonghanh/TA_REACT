@@ -1,0 +1,60 @@
+@import 'scss/base';
+.designer {
+    .item {
+        margin-bottom: 20px;
+        width: 448px;
+        height: 552px;
+        a {
+            color: #fff;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            transition: color 150ms ease-in-out;
+            text-decoration: none;
+            background-color: transparent;
+            &:hover {
+                outline: 0;
+                img {
+                    backface-visibility: hidden;
+                    opacity: .8;
+                    transform: scale(1.1);
+                }
+                .name {
+                    left: 45px;
+                    &:before {
+                        opacity: 1;
+                        left: -20px;
+                    }
+                }
+            }
+            img {
+                transition: opacity 1s,transform 1s;
+                vertical-align: middle;
+            }
+            .name {
+                font-size: 26.5px;
+                line-height: 30px;
+                max-width: 166px;
+                position: absolute;
+                left: 20px;
+                bottom: 15px;
+                margin: 0;
+                transition: left .35s;
+                font-size: 31px;
+                text-transform: uppercase;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: -24px;
+                    top: 0;
+                    height: 100%;
+                    width: 4px;
+                    background-color: #fff;
+                    opacity: 0;
+                    transition: opacity .5s ease-in .1s;
+                }
+            }
+        }
+    }
+}
+
